@@ -17,6 +17,11 @@ type KeyValsType<T> = {
 
 type CustKeyValsType =  KeyValsType<Customer>
 
+
+type Keys = keyof Customer // 不能直观的看到Keys的联合类型
+type DirectKeys<T> = T extends any ? T : never
+type CurKeys = DirectKeys<Keys> // 能直接显示结果
+
 export {}
 
 

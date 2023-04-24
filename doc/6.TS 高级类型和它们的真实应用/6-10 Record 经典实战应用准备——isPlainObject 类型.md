@@ -1,6 +1,4 @@
-# 8-13 Record 经典实战应用准备——isPlainObject 类型
-
-
+# Record 经典实战应用准备——isPlainObject 类型
 
 ```ts
   {
@@ -14,5 +12,3 @@
 }
 
 ```
-
-
