@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:build": "tsc -w",
+    "dev:start": "nodemon --watch dist/8chapter js --exec  node ./dist/8chapter/1ClassDecorator.js",
+    "start": "concurrently npm:dev:*",
+    "tsc": "tsc all/8chapter/1ClassDecorator.ts  --target ES5 -w --experimentalDecorators"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22",
+    "reflect-metadata": "^0.1.13"
   }
 }

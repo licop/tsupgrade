@@ -17,6 +17,6 @@ type CustReturnTyp = CustFn extends (params: any) => infer R ? R : never  // str
 type ReturnTyp<T> = T extends (params: any) => infer R ? R : never
 type CustReturnTyp1 = ReturnTyp<CustFn> // string
 
-
+// 获取数组中的元素类型
 type EleOrArr<T> = T extends Array<infer P> ? P : never
 type EleofArrTest = EleOrArr<Array<string>> // string

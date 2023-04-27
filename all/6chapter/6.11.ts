@@ -49,4 +49,9 @@ function arrToObj<T, K extends keyof T>(arr: T[], mainKey: K, pickKeys: Array<K>
 const obj = arrToObj(todoList, 'title', ['title', 'completed'])
 console.log(obj)
 
+// 第二种写法
+// 获取数组中的元素类型
+
+
+
 export {}
