@@ -1,7 +1,6 @@
 // 为什么要用函数重载【好处和应用场景】
 // 一组具有相同名字，不同参数类表和返回值无关并且具有一个实现签名和一个或多个重签名的函数
 
-
 export type Message = {
   id: number
   type: MessageType
@@ -65,10 +64,9 @@ function searchMsg(condition: any) { // 实现签名  参数和返回值的类�
 }
 
 searchMsg(MessageType.Audio).forEach(msg => {
-  console.log(msg)
+  console.log(msg, 67)
 })
-searchMsg(1)?.id
-
+console.log(searchMsg(1)?.id, 69)
 
 
 export {}

@@ -1,3 +1,5 @@
+// 联合类型
+
 interface Car {
   brandNo: string
 }

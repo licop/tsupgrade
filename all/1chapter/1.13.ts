@@ -1,3 +1,4 @@
+// 函数类型
 // function info(name: string, age: number): number {
 //   return 3
 // }

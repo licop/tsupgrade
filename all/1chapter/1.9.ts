@@ -18,4 +18,6 @@ let p: Product = {
 
 type A = Product["name"]
 type B = Product["name"|"account"] 
+
+
 export {}

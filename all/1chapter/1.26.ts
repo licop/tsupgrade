@@ -26,7 +26,7 @@ class StringUtil {
   }
 }
 
-const dataProps1 =  Object.getOwnPropertyDescriptor(People.prototype, 'doEat')
+const dataProps1 = Object.getOwnPropertyDescriptor(People.prototype, 'doEat')
 console.log(dataProps1, 24)
 
 const targetMethod = dataProps1?.value

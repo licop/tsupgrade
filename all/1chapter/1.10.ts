@@ -15,6 +15,7 @@ type S = Product[typeof symid]
 type Pkeys = keyof Product // "name"|"price"|"account"|"buy"
 let pkeys: Pkeys = 'account'
 
+// 显示Pkeys的类型
 type AllKeys<T> = T extends any ? T : never
 type Pkeys2 = AllKeys<keyof Product> //  typeof symid | "name" | "price" | "account" | "buy"
 let pkeys2 = 2

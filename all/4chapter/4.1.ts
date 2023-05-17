@@ -7,7 +7,7 @@ interface Ref<T> {
 
 type Student = {name: string, age: number}
 
-let ref:Ref<Student> = {
+let ref: Ref<Student> = {
   value: {name: 'licop', age: 23}
 } 
 

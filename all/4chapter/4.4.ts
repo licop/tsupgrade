@@ -14,7 +14,6 @@ class Order {
 // type OrderTypeAttrName = keyof Order
 // let oian: OrderTypeAttrName = 'orderName'
 
-
 type InstancePropKeys<T extends object> = keyof T
 type OrdPropKey = InstancePropKeys<Order>
 

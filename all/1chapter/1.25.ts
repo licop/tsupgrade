@@ -1,4 +1,5 @@
 // set和get方法, 可以对属性进行控制
+
 class People {
   name: string;
   _age: number = 0;

@@ -1,3 +1,4 @@
+// 函数参数类型
 
 type TypStuobj = { username: string, age: number, phone: string }
 

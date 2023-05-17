@@ -1,4 +1,4 @@
-let str:string|undefined;
+let str: string|undefined;
 console.log('str:', str)
 
 // data: string | undefined

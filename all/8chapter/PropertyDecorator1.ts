@@ -23,18 +23,6 @@ class CustomerService {
   }
 }
 
-class MyClass {
-  constructor(name) {
-    this.name = name;
-  }
-
-  sayHello() {
-    console.log(`你好，我的名字是${this.name}`);
-  }
-}
-
-
-console.log(MyClass.prototype);
 
 
 console.log(CustomerService.prototype, 26)

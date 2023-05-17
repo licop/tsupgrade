@@ -45,9 +45,6 @@ function getSubItemFromArr<T extends EleofArr<T>[], K extends keyof EleofArr<T>>
   }) as Pick<EleofArr<T>, K>[]
 }
 
-
-
 console.log(getSubItemFromArr(arr, ['stuClass', 'stuNo']))
-
 
 export {}
