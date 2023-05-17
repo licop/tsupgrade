@@ -18,7 +18,7 @@ interface ConstructorInter {
   new (...args: any): any
 }
 
-//function createFactoryConstructor(constructorTyp: new (...args: any) =>any) {
+//function createFactoryConstructor(constructorTyp: new (...args: any) =>any) {}
 function createFactoryConstructor(constructorTyp: ConstructorInter) {
   console.log(constructorTyp.name + "被创建..")
   new constructorTyp()

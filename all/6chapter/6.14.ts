@@ -28,7 +28,5 @@ type TestArrayKeys = Convert<keyof Array<any>>
 type Test = 'do'
 type TestCap = Capitalize<Test> 
 
-
-
 export {}
 

@@ -3,11 +3,6 @@
 // Extract是条件类型的简写
 // type Extract<T, U> = T extends U ? T : never;
 
-
 type TestExtract = Extract<string, string | number> // string
-
-
-
-
 
 export {}

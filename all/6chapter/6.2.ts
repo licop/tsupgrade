@@ -1,3 +1,4 @@
+// infer 实例
 class Subject {
   constructor(public subid: number, public subname: string) {}
 }

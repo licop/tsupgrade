@@ -1,4 +1,5 @@
 // 交叉类型和通用交叉类型方法
+
 type O1 = {a: string, b: number}
 type O2 = {c: string, d: number}
 

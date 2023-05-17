@@ -1,17 +1,16 @@
 // 类型体操
-
 // 使用条件类型和类型推导来实现类型转换和类型过滤
+
 interface Person {
   name: string;
   age: number;
 }
 
 type Filter<T, U> = T extends U ? T : never;
-type PersonName = Filter<keyof Person, string>;
+type PersonName = Filter<keyof Person, string>; // name | age
 
 
 // 使用映射类型和索引类型查询来实现对象属性的转换和过滤：
-
 interface Person {
   name: string;
   age: number;

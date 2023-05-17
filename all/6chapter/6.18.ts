@@ -21,7 +21,6 @@ class FoodModule {
       type: 'searchFoodByCity'
     }
   }
-
 }
 
 // 下面是 FoodModule 类的 delay 和 searchFoodByCity 方法的泛型类型 分别是：

@@ -1,11 +1,10 @@
 // Record 经典实战应用准备——isPlainObject 类型
-
 let rec: Record<string, any> = [2, 5, 6] // Record可以定义数组
 
 
 // Record<string, any>类型的意思是要么是个对象要么是个数组
-function isPlainObject<T>(data: Record<string, any>) {
-  return Object.prototype.toString.call(data) === '[object, Object]'
+function isPlainObject(data: Record<string, any>) {
+  return Object.prototype.toString.call(data) === '[object Object]'
 }
 
 type BaseType = string | number | boolean | null | undefined;
@@ -23,7 +22,6 @@ function deepCopy<T extends Record<string, any> | BaseType>(obj: T) {
 
   if(isPlainObject(obj)) {
     cloneObj = {}
-  
     Object.keys(obj).forEach(key => {
       cloneObj[key] = deepCopy(obj[key])
     })
@@ -50,6 +48,8 @@ let obj1 =   {
 }
 
 const cloneObj1 = deepCopy(obj1)
+
+console.log(obj1, cloneObj1, 54)
 
 export {}
 

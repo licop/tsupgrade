@@ -25,7 +25,6 @@ type Todo__ = Partial<Todo>
 // type Readonly<T> = {
 //   readonly [P in keyof T]: T[P];
 // };
-
 type Todo___ = Readonly<Todo>
 
 // ReturnType 可以用来获取一个函数的返回值类型
